@@ -8,6 +8,19 @@
     h1 {
       font-size: 8rem;
       padding-bottom: 3%;
+
+      @media @tablet {
+        font-size: 6rem;
+      }
+
+      @media @smalltablet {
+        font-size: 5.3rem;
+      }
+
+      @media @phone {
+        font-size: 4.5rem;
+        padding-top: 3%;
+      }
     }
 
     div {
@@ -17,12 +30,28 @@
         flex-direction: column;
         width: 40%;
 
+        @media @smalltablet {
+          width: 100%;
+        }
+
         .p {
           flex-direction: column;
           
           p {
-            font-size: 1.75rem;
+            font-size: 1.9rem;
             padding: 4% 2% 4% 2%;
+
+            @media @tablet {
+              font-size: 1.75rem;
+            }
+
+            @media @smalltablet {
+              padding: 1.5% 3%;
+            }
+
+            @media @phone {
+              padding: 1% 2%;
+            }
           }
         }
         .signup-btn {
@@ -38,10 +67,24 @@
       
       .img {
         width: 60%;
+        max-width: 60%;
+        margin-right: 1%;
+
+        @media @tablet {
+
+        }
+
+        @media @smalltablet {
+          display: none;
+        }
 
         img {
           border: 2px solid @off-white;
           border-radius: 15px;
+
+          @media @smalltablet {
+            margin-right: 2%;
+          }
         }
       }
     }
@@ -49,6 +92,7 @@
 
   section {
     margin: 2% 0;
+
     div {
       display: flex;
       
