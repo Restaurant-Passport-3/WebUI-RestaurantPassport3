@@ -1,12 +1,18 @@
 .bttn (@width, @pad, @margin) {
-  background-color: red; //change both reds on lines 2, 3
-  color: red;
+  
+  background-color: @navy; //change both reds on lines 2, 3
+  color: @teal;
   cursor: pointer;
   width: @width;
   padding: @pad 0;
   font-size: 1.8rem;
   margin: @margin;
+  border: 2px solid @off-white;
+  border-radius: 10px;
+  
 
-
-
+  &:hover {
+    background-color: @teal;
+    color: @off-white;
+  }
 }

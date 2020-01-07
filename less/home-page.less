@@ -7,11 +7,11 @@
 
     h1 {
       font-size: 8rem;
+      padding-bottom: 3%;
     }
 
     div {
       display: flex;
-      
       
       .p-btn {
         flex-direction: column;
@@ -19,13 +19,19 @@
 
         .p {
           flex-direction: column;
-
+          
+          p {
+            font-size: 1.75rem;
+            padding: 4% 2% 4% 2%;
+          }
         }
         .signup-btn {
-          justify-content: center;
-          
+          display: flex;
+          padding: 1% 0 1% 25%;
+
           button {
-            width: 40%;
+            
+            .bttn(50%, 3%, 0px);
           }
         }
       }
@@ -34,14 +40,23 @@
         width: 60%;
 
         img {
-          border: 2px solid @navy;
-          border-radius: 20px;
+          border: 2px solid @off-white;
+          border-radius: 15px;
         }
       }
     }
   }
 
   section {
-
+    margin: 2% 0;
+    div {
+      display: flex;
+      
+      img {
+        margin: 2% 1%;
+        border: 2px solid @off-white;
+        border-radius: 15px;
+      }
+    }
   }
 }

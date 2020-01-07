@@ -174,12 +174,22 @@ nav a {
   font-size: 2rem;
   padding: 3%;
 }
+footer {
+  color: #23374d;
+  background: #e5e5e5;
+  padding: 15px 0;
+  border-top: 3px solid #007F96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container header {
   display: flex;
   flex-direction: column;
 }
 .container header h1 {
   font-size: 8rem;
+  padding-bottom: 3%;
 }
 .container header div {
   display: flex;
@@ -191,16 +201,44 @@ nav a {
 .container header div .p-btn .p {
   flex-direction: column;
 }
+.container header div .p-btn .p p {
+  font-size: 1.75rem;
+  padding: 4% 2% 4% 2%;
+}
 .container header div .p-btn .signup-btn {
-  justify-content: center;
+  display: flex;
+  padding: 1% 0 1% 25%;
 }
 .container header div .p-btn .signup-btn button {
-  width: 40%;
+  background-color: #23374d;
+  color: #007F96;
+  cursor: pointer;
+  width: 50%;
+  padding: 3% 0;
+  font-size: 1.8rem;
+  margin: 0px;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+}
+.container header div .p-btn .signup-btn button:hover {
+  background-color: #007F96;
+  color: #e5e5e5;
 }
 .container header div .img {
   width: 60%;
 }
 .container header div .img img {
-  border: 2px solid #23374d;
-  border-radius: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 15px;
+}
+.container section {
+  margin: 2% 0;
+}
+.container section div {
+  display: flex;
+}
+.container section div img {
+  margin: 2% 1%;
+  border: 2px solid #e5e5e5;
+  border-radius: 15px;
 }
