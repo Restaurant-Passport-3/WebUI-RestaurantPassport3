@@ -5,12 +5,25 @@
     display: flex;
     flex-wrap: wrap;
 
+    @media @phone {
+      flex-direction: column;
+    }
+
     div {
       width: 50%;
+      
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3, p {
         width: 75%;
         text-align: center;
+
+        @media @phone {
+          width: 90%;
+        }
       }
 
       h3 {
@@ -19,31 +32,36 @@
         @media @smalltablet {
           font-size: 2.25rem;
         }
-
-        @media @phone {
-          font-size: 1.75rem;
-        }
       }
 
       p {
         @media @smalltablet {
           font-size: 1.4rem;
         }
-        
-        @media @phone{
-          font-size: 1.25rem;
-        }
       }
 
-      img {
+      .git2 {
+
+      }
+
+      .team-img {
         border: 1px solid @navy;
         border-radius: 200px;
         margin: 2%;
         width: 75%;
+
+        @media @phone {
+          width: 90%;
+          margin: 0 auto;
+        }
       }
     }
   }
   .team-member {
     padding: 2%;
+
+      @media @phone {
+      padding: 4%;
+  }
   }
 }
