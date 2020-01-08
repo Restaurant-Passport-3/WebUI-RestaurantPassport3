@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  background-color: #23374d;
+}
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  color: #e5e5e5;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+}
+nav {
+  display: flex;
+  padding: 0.75% 0 0.75% 0;
+}
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav i {
+  font-size: 6rem;
+}
+@media (max-width: 500px) {
+  nav i {
+    font-size: 4rem;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #007F96;
+  font-size: 1.75rem;
+  padding: 3%;
+}
+@media (max-width: 800px) {
+  nav a {
+    padding: 1%;
+  }
+}
+@media (max-width: 650px) {
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.4rem;
+  }
+}
+footer {
+  color: #23374d;
+  background: #e5e5e5;
+  padding: 15px 0;
+  border-top: 3px solid #007F96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header {
+  display: flex;
+  flex-direction: column;
+}
+.container header h1 {
+  font-size: 8rem;
+  padding-bottom: 3%;
+}
+@media (max-width: 800px) {
+  .container header h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 650px) {
+  .container header h1 {
+    font-size: 5.3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container header h1 {
+    font-size: 4.5rem;
+    padding-top: 3%;
+  }
+}
+.container header div {
+  display: flex;
+}
+.container header div .p-btn {
+  flex-direction: column;
+  width: 40%;
+}
+@media (max-width: 650px) {
+  .container header div .p-btn {
+    width: 100%;
+  }
+}
+.container header div .p-btn .p {
+  flex-direction: column;
+}
+.container header div .p-btn .p p {
+  font-size: 1.9rem;
+  padding: 4% 2% 4% 2%;
+}
+@media (max-width: 800px) {
+  .container header div .p-btn .p p {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 650px) {
+  .container header div .p-btn .p p {
+    padding: 1.5% 3%;
+  }
+}
+@media (max-width: 500px) {
+  .container header div .p-btn .p p {
+    padding: 1% 2%;
+  }
+}
+.container header div .p-btn .signup-btn {
+  display: flex;
+  padding: 1% 0 1% 25%;
+}
+.container header div .p-btn .signup-btn button {
+  background-color: #23374d;
+  color: #007F96;
+  cursor: pointer;
+  width: 50%;
+  padding: 3% 0;
+  font-size: 1.8rem;
+  margin: 0px;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+}
+.container header div .p-btn .signup-btn button:hover {
+  background-color: #007F96;
+  color: #e5e5e5;
+}
+.container header div .img {
+  width: 60%;
+  max-width: 60%;
+  margin-right: 1%;
+}
+@media (max-width: 650px) {
+  .container header div .img {
+    display: none;
+  }
+}
+.container header div .img img {
+  border: 2px solid #e5e5e5;
+  border-radius: 15px;
+}
+@media (max-width: 650px) {
+  .container header div .img img {
+    margin-right: 2%;
+  }
+}
+.container section {
+  margin: 2% 0;
+}
+.container section div {
+  display: flex;
+}
+.container section div img {
+  margin: 2% 1%;
+  border: 2px solid #e5e5e5;
+  border-radius: 15px;
+}
