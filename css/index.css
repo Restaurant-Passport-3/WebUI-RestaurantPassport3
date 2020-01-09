@@ -357,6 +357,11 @@ footer {
     font-size: 1.4rem;
   }
 }
+.container .members-container div .git2 {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
 .container .members-container div .team-img {
   border: 1px solid #23374d;
   border-radius: 200px;
