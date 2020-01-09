@@ -298,6 +298,7 @@ footer {
 .container header div .img img {
   border: 2px solid #e5e5e5;
   border-radius: 15px;
+  width: 100%;
 }
 @media (max-width: 800px) {
   .container header div .img img {
