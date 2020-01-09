@@ -1,0 +1,70 @@
+.container {
+
+  
+  .members-container {
+    border-top: 7.5px solid @teal;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @phone {
+      flex-direction: column;
+    }
+
+    div {
+      width: 50%;
+      
+
+      @media @phone {
+        width: 100%;
+      }
+
+      h3, p {
+        width: 75%;
+        text-align: center;
+
+        @media @phone {
+          width: 90%;
+        }
+      }
+
+      h3 {
+        font-weight: bold;
+
+        @media @smalltablet {
+          font-size: 2.25rem;
+        }
+      }
+
+      p {
+        @media @smalltablet {
+          font-size: 1.4rem;
+        }
+      }
+
+      .git2 {
+        display: flex;
+        justify-content: center;
+        width: 75%;
+      }
+
+      .team-img {
+        border: 1px solid @navy;
+        border-radius: 200px;
+        margin: 2%;
+        width: 75%;
+
+        @media @phone {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .team-member {
+    padding: 2%;
+
+      @media @phone {
+      padding: 4%;
+  }
+  }
+}

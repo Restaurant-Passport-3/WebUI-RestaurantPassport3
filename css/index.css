@@ -299,9 +299,9 @@ footer {
   border: 2px solid #e5e5e5;
   border-radius: 15px;
 }
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .container header div .img img {
-    margin-right: 2%;
+    width: 100%;
   }
 }
 .container section {
@@ -314,4 +314,71 @@ footer {
   margin: 2% 1%;
   border: 2px solid #e5e5e5;
   border-radius: 15px;
+}
+.container .members-container {
+  border-top: 7.5px solid #007F96;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .container .members-container {
+    flex-direction: column;
+  }
+}
+.container .members-container div {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .members-container div {
+    width: 100%;
+  }
+}
+.container .members-container div h3,
+.container .members-container div p {
+  width: 75%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .members-container div h3,
+  .container .members-container div p {
+    width: 90%;
+  }
+}
+.container .members-container div h3 {
+  font-weight: bold;
+}
+@media (max-width: 650px) {
+  .container .members-container div h3 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 650px) {
+  .container .members-container div p {
+    font-size: 1.4rem;
+  }
+}
+.container .members-container div .git2 {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+.container .members-container div .team-img {
+  border: 1px solid #23374d;
+  border-radius: 200px;
+  margin: 2%;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .container .members-container div .team-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.container .team-member {
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .team-member {
+    padding: 4%;
+  }
 }
