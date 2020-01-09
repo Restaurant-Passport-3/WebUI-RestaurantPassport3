@@ -228,7 +228,7 @@ footer {
 }
 @media (max-width: 500px) {
   .container header h1 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
     padding-top: 3%;
   }
 }
